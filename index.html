@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO App</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <script>
+
+      // Your web app's Firebase configuration
+    
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    
+      var firebaseConfig = {
+    
+        apiKey: "AIzaSyDW_to5QcyOon5dj91ci0j2TZ6m00mMIdg",
+    
+        authDomain: "tododatabase-haya.firebaseapp.com",
+    
+        projectId: "tododatabase-haya",
+    
+        storageBucket: "tododatabase-haya.appspot.com",
+    
+        messagingSenderId: "8443588205",
+    
+        appId: "1:8443588205:web:bf61e4a9072a9108d39964",
+    
+        measurementId: "G-MY2QKT8JF8"
+    
+      };
+    
+      // Initialize Firebase
+    
+      firebase.initializeApp(firebaseConfig);
+    
+      firebase.analytics();
+    
+    </script>
+
+	  <style>
+		  body{
+        margin: 10%;
+			background-image: linear-gradient(pink , purple, orange);
+      background-repeat: no-repeat;
+      height: 100vh;
+			  text-align: center;
+		  }
+		  .btn{
+        
+			  background-color: rgb(250, 120, 228);
+			  font-size: 25px;
+		  }
+		  .btn1{
+        
+			  background-color: rgb(217, 105, 245);
+			  font-size: 25px;
+		  }
+      #item-input{
+      width: 100%;
+      height: 100%;
+      }
+	  </style>
+	  
+</head>
+<body>
+    <div>
+		<input placeholder="Input Item" type="text" id="item-input">
+		<button onclick="addTodo()">ADD ITEM</button>
+		<button onclick="deleteAll()">DELETE ALL</button>
+	</div>
+
+	<div>
+		<ul id="todolist">
+
+		</ul>
+	</div>
+
+
+
+
+
+
+
+</body>
+ <script src="app.js"></script>
+</html>
